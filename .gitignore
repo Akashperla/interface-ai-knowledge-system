@@ -1,0 +1,35 @@
+# The supplied website snapshots must never be published.
+snapshots/
+snapshots_zip/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.db
+*.sqlite
+*.sqlite3
+
+# Do not commit secrets or runtime configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Build and evaluation outputs.
+results/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+
+# Keep supplied assessment materials and generated scoring records local.
+hackathon-knowledge-kit-participant*/
+Knowledge-Hackathon-Assignment*
+*.jsonl
+*.log
+*.csv
